@@ -1,0 +1,49 @@
+== README
+
+This README would normally document whatever steps are necessary to get the
+application up and running.
+
+Things you may want to cover:
+
+* Ruby version
+
+* System dependencies
+
+* Configuration
+
+* Database creation
+
+* Database initialization
+
+* How to run the test suite
+
+* Services (job queues, cache servers, search engines, etc.)
+
+* Deployment instructions
+
+* ...
+
+
+Please feel free to use a different markup language if you do not plan to run
+<tt>rake doc:app</tt>.
+
+
+Instruction to Run the app
+
+1.Unzip the content
+
+2.>rake db:create
+
+3.>rake db:migrate
+
+4.>rails s
+
+5. Give http://localhost:3000/ in your browser
+
+6. Signup with an email id
+
+7.Upload your tab file in data_input page
+
+8.The data will get read,normalisd and stored.Then you will be redirected to purchase details table.
+
+9.It will show the total amount. you can logout after doing the upload.

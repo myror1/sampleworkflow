@@ -1,0 +1,27 @@
+<h1>Listing data_inputs</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>File Name</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @data_inputs.each do |data_input| %>
+      <tr>
+        <td><%= data_input.name %></td>
+        <td><%= data_input.tab_file_name %></td>
+        <td><%= link_to 'Show', data_input %></td>
+        <td><%= link_to 'Edit', edit_data_input_path(data_input) %></td>
+        <td><%= link_to 'Destroy', data_input, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+<br>
+
+<%= link_to 'New Data input', new_data_input_path %> | 
+<%= link_to 'Purchase Details', purchase_details_path %>
